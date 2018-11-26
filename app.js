@@ -6,6 +6,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const Cloudant = require('cloudant');
+const config = require('dotenv').config()
 
 const dbName = process.env.CLOUDANT_DB || 'slack-poll';
 
